@@ -1,8 +1,0 @@
-version = 0.1
-[default.deploy.parameters]
-stack_name = "java-economed"
-resolve_s3 = true
-s3_prefix = "java-economed"
-region = "sa-east-1"
-capabilities = "CAPABILITY_IAM"
-image_repositories = []

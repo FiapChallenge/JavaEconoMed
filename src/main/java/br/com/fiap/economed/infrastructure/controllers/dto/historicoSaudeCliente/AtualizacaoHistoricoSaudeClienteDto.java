@@ -1,12 +1,11 @@
-package br.com.fiap.economed.domain.entities;
+package br.com.fiap.economed.infrastructure.controllers.dto.historicoSaudeCliente;
 
 import java.time.LocalDate;
 
-public record HistoricoSaudeCliente(
-        Long clienteId,
+public record AtualizacaoHistoricoSaudeClienteDto(
         LocalDate dataRegistro,
         Boolean fuma,
-        String DoencaPrincipal,
+        String doencaPrincipal,
         String historicoFamiliar,
         String alergias,
         String observacoes

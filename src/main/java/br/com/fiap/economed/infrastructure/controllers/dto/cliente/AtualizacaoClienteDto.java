@@ -1,11 +1,11 @@
-package br.com.fiap.economed.domain.entities;
+package br.com.fiap.economed.infrastructure.controllers.dto.cliente;
 
-import br.com.fiap.economed.domain.entities.enums.EstadoCivilCliente;
 
 import java.time.LocalDate;
 
-public record Cliente(
-        Long id,
+import br.com.fiap.economed.domain.entities.enums.EstadoCivilCliente;
+
+public record AtualizacaoClienteDto(
         String rg,
         String nome,
         String telefone,
@@ -13,6 +13,5 @@ public record Cliente(
         LocalDate dataNascimento,
         String cpf,
         EstadoCivilCliente estadoCivil,
-        Long convenioId
-) {
+        Long convenioId) {
 }

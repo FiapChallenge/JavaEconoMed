@@ -1,12 +1,13 @@
-package br.com.fiap.economed.domain.entities;
+package br.com.fiap.economed.infrastructure.controllers.dto.unidade;
 
-public record Unidade(
+
+public record CadastroUnidadeDto(
         Long empresaId,
         String nome,
         String telefone,
         String email,
         String tipo,
         Integer capacidade,
-        String especialidades
-) {
+        String especialidades) {
+
 }
